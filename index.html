@@ -5,82 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tee Time VR - The Ultimate Social Golf Experience</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
+<body id="top">
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="brand" href="#top">Tee Time VR</a>
+            <nav class="nav-links">
+                <a href="#features-section">Features</a>
+                <a href="#video-section">Trailer</a>
+                <a href="#community-section">Community</a>
+                <a href="#screenshots-section">Gallery</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
             </nav>
-            <div class="header-content">
-                <h1 class="game-title">Tee Time VR</h1>
-                <p class="tagline">Your virtual golf hangout spot!</p>
-            </div>
+            <a href="#cta-section" class="nav-cta">Play Now</a>
         </div>
     </header>
 
     <main>
-        <section id="video-section">
-            <div class="container">
-                <h2>See It in Action</h2>
-                <div class="video-wrapper">
-                    <video controls poster="screenshot1.png" width="100%">
-                        <source src="tee_time_vr_trailer.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+        <section class="hero">
+            <div class="hero-background" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="hero-pill">The ultimate social golf lounge</span>
+                    <h1>Play under neon skies, share a laugh, and master the greens together.</h1>
+                    <p>Tee Time VR is your escape to dreamlike fairways and relaxed nights with friends. Drop into a private bay, swing with intuitive controls, and chill in immersive environments designed for good vibes.</p>
+                    <div class="hero-actions">
+                        <a href="#cta-section" class="cta-button">Download Now</a>
+                        <a href="#video-section" class="secondary-button"><i class="fa-solid fa-play"></i> Watch the trailer</a>
+                    </div>
+                    <ul class="hero-stats">
+                        <li><span>12+</span> Fantastical courses</li>
+                        <li><span>4</span> Cozy lounge hubs</li>
+                        <li><span>Always On</span> Drop-in multiplayer</li>
+                    </ul>
+                </div>
+                <div class="hero-media">
+                    <div class="media-frame">
+                        <img src="HeroImage.png" alt="Players hanging out inside Tee Time VR with neon lighting.">
+                    </div>
+                    <p class="media-caption">Captured live from the <strong>Moonlight Bay</strong> social suite.</p>
                 </div>
             </div>
         </section>
 
-        <section id="features-section">
+        <section id="video-section" class="section-light">
+            <div class="container content-split">
+                <div class="video-stack">
+                    <div class="cover-art" aria-hidden="true">
+                        <img src="CoverArt.png" alt="Tee Time VR cover art">
+                    </div>
+                    <div class="video-wrapper elevated-card">
+                        <video controls poster="Screenshot4.png">
+                            <source src="tee_time_vr_trailer.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="section-copy">
+                    <h2>See the magic in motion</h2>
+                    <p>Whether you are putting beneath aurora skies or relaxing in the clubhouse, Tee Time VR makes every moment shareable. Invite your crew, sync your swings, and discover whimsical greens built for social play.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-vr-cardboard"></i> Optimized for Meta Quest, Steam VR, and PS VR2.</li>
+                        <li><i class="fa-solid fa-comments"></i> Spatial voice chat keeps every joke crystal clear.</li>
+                        <li><i class="fa-solid fa-wand-magic-sparkles"></i> Dynamic weather and lighting keep the mood fresh.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="features-section" class="section-dark">
             <div class="container">
-                <h2>Why You'll Love Tee Time VR</h2>
+                <h2>Why you&apos;ll love Tee Time VR</h2>
                 <div class="features-grid">
-                    <div class="feature">
-                        <div class="feature-icon"><i class="fa-solid fa-flag"></i></div>
-                        <h3>Stunning Courses</h3>
-                        <p>Explore beautifully crafted, imaginative golf courses that take you to worlds beyond the green.</p>
+                    <div class="feature-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-mountain-sun"></i></div>
+                        <h3>Stunning dreamscapes</h3>
+                        <p>Play across floating islands, neon canyons, and moonlit beaches meticulously crafted to transport you beyond the ordinary driving range.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
-                        <h3>Hang Out with Friends</h3>
-                        <p>Meet up with your friends in private rooms. Chat, laugh, and enjoy a relaxing round of golf together.</p>
+                    <div class="feature-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Hangouts made easy</h3>
+                        <p>Create private lounges, share custom playlists, and celebrate every birdie with expressive avatars and reactive emotes.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon"><i class="fa-solid fa-face-laugh-beam"></i></div>
-                        <h3>Simple & Fun</h3>
-                        <p>No complex analytics, no pressure. Just pure, simple golfing fun for everyone, from beginners to pros.</p>
+                    <div class="feature-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Effortless fun</h3>
+                        <p>Intuitive swing mechanics, helpful assists, and approachable challenges ensure every player has an unforgettable time on the green.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="screenshots-section">
+        <section class="section-highlight" id="community-section">
+            <div class="container highlight-grid">
+                <div class="highlight-media">
+                    <img src="Screenshot4.png" alt="Friends taking a group selfie after a VR golf match.">
+                </div>
+                <div class="highlight-copy">
+                    <h2>Meet up, level up, and chill</h2>
+                    <p>Host weekly tournaments, unlock themed cosmetics, and show off your clubhouse corner. Tee Time VR is designed for the community that plays together.</p>
+                    <div class="pill-group">
+                        <span class="pill">Seasonal events</span>
+                        <span class="pill">Cross-platform lobbies</span>
+                        <span class="pill">Photo mode ready</span>
+                    </div>
+                    <a href="#cta-section" class="secondary-button">Join the clubhouse</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="screenshots-section" class="section-gallery">
             <div class="container">
-                <h2>Game Gallery</h2>
+                <h2>Inside the experience</h2>
                 <div class="screenshots-grid">
-                    <div class="screenshot-item"><img src="screenshot1.png" alt="Tee Time VR Screenshot 1"></div>
-                    <div class="screenshot-item"><img src="screenshot2.png" alt="Tee Time VR Screenshot 2"></div>
-                    <div class="screenshot-item"><img src="screenshot3.png" alt="Tee Time VR Screenshot 3"></div>
+                    <div class="screenshot-item">
+                        <img src="screenshot1.png" alt="A player lining up a putt beside glowing lanterns.">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="screenshot2.png" alt="A panoramic view of a Tee Time VR course at sunset.">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="screenshot3.png" alt="Friends celebrating a win in the Tee Time VR lounge.">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="Screenshot4.png" alt="A futuristic course filled with vibrant lighting.">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <section id="cta-section">
+    <section id="cta-section" class="cta-section">
         <div class="container">
-            <h2>Ready to Play?</h2>
-            <p>Grab your headset and join the fun! Available on all major VR platforms.</p>
-            <a href="#" class="cta-button">Download Now!</a>
+            <div class="cta-card">
+                <h2>Ready to swing into your next hangout?</h2>
+                <p>Download Tee Time VR and start planning your next night on the greens. Your lounge is waiting.</p>
+                <div class="cta-actions">
+                    <a href="#" class="cta-button large">Get Tee Time VR</a>
+                    <a href="mailto:hello@teetimevr.com" class="secondary-button">Contact the team</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Tee Time VR. All rights reserved.</p>
+        <div class="container footer-grid">
+            <div>
+                <p class="brand">Tee Time VR</p>
+                <p>© 2024 Tee Time VR. All rights reserved.</p>
+            </div>
+            <nav>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </nav>
         </div>
     </footer>
 </body>
